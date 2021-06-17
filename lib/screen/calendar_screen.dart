@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jump_start/screen/clock_screen.dart';
 
 import '../main.dart';
 
@@ -72,21 +73,6 @@ class _CalendarScreenState extends State<CalendarScreen> {
       dayEnd = endDateCustom.day;
     });
   }
-
-  // pickDate() async {
-  //   DateTime date = await showDatePicker(
-  //       context: context,
-  //       initialDate: DateTime(DateTime.now().year - 5),
-  //       firstDate: DateTime.now(),
-  //       lastDate: DateTime(DateTime.now().year + 5));
-
-  //   if (date != null) {
-  //     setState(() {
-  //       pickedDate = date;
-  //       firstDate = true;
-  //     });
-  //   }
-  // }
 
   @override
   void initState() {
@@ -206,7 +192,11 @@ class _CalendarScreenState extends State<CalendarScreen> {
                       alignment: Alignment.center,
                       child: TextButton(
                           onPressed: () {
-                            print("NEXT");
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ClockScreen()),
+                            );
                           },
                           child: Text(
                             "NEXT",

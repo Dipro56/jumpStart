@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
                     alignment: Alignment.center,
                     color: Colors.black,
                     height: 40,
-                    child: Text("Jump Start",
+                    child: Text("Jump Start ",
                         style: TextStyle(color: Colors.white, fontSize: 20)),
                   ),
                   SizedBox(

@@ -80,22 +80,3 @@ class ExtraScreen extends StatelessWidget {
     )));
   }
 }
-
-
-// SafeArea(
-//         child: Scaffold(
-//             body: Container(
-//       color: Colors.black,
-//       child: Column(
-//         children: <Widget>[
-//           Container(
-//             color: Colors.black,
-//             width: double.infinity,
-//             alignment: Alignment.center,
-//             height: 40,
-//             child: Text("Extras",
-//                 style: TextStyle(color: Colors.white, fontSize: 20)),
-//           ),
-//         ],
-//       ),
-//     )));
